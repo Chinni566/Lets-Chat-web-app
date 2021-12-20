@@ -1,13 +1,12 @@
+
 html, body
 {
   height: 100%;
   margin: 0;
+  background-image: url("Background.png");
+  background-size: cover;
 }
-
-body
-{
-	background-image: linear-gradient(to right top, #33f1d1, #00ff73, #fbff00, #ffd900, #ff4800);
-}
+ 
 
 .header
 {
@@ -16,19 +15,23 @@ body
 	font-size: 45px;
 	letter-spacing: 10px;
 	margin-top: 80px;
-}
+}	
 .header img
 {
-	width: 80px;
+	width: 100px;
 	margin-left: -15px;
 }
 
 .login_div
 {
 	background: rgba(255,255,255,0.8);
-	float: none;
 	border-radius: 15px;
+	align-items: center;
+	margin-left: 35%;
+
 }
+
+
 
 .logo
 {
@@ -43,11 +46,13 @@ body
 	border-radius: 15px;
 	background-color: rgb(73, 190, 230);
 	color: rgb(12, 240, 69);
-	border-color: rgb(255, 153, 0);
-	border-style: dotted;
-}
+	border-color: rgb(255, 255, 255);
+	border-style: dashed;
+
+	}
 #login_button:hover{
-	background-color: rgb(251, 255, 0);
+	background-color: rgb(255, 255, 255);
+
 }
 .room_name
 {

@@ -1,13 +1,12 @@
 
 
 var firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
+  apiKey: "AIzaSyC-xDNPzYio4X-W57mPyEnMe4AWXL1OAY0",
+  authDomain: "letchatwebapp.firebaseapp.com",
+  projectId: "letchatwebapp",
+  storageBucket: "letchatwebapp.appspot.com",
+  messagingSenderId: "736958393544",
+  appId: "1:736958393544:web:6610c755768bc5091809fd"
   };
   
   firebase.initializeApp(firebaseConfig);
@@ -26,7 +25,7 @@ var firebaseConfig = {
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
      Room_names = childKey;
     //Start code
-
+    
     //End code
     });});}
 getData();
